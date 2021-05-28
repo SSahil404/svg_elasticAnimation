@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: rgb(29, 29, 29);
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+}
+
+svg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    display: block;
+    z-index: -1;
+}
+
+path {
+    stroke: hsl(0, 81%, 27%);
+    fill: none;
+}
+
+h1 {
+    font-size: 6vh;
+    color: hsl(0, 81%, 20%);
+    font-family: "Courier New", Courier, monospace;
+    pointer-events: none;
+
+    &::before {
+        content: "ELASTIC";
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        font-size: 20rem;
+        color: rgb(32, 32, 32);
+        z-index: -99;
+    }
+}

@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #1d1d1d;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  overflow: hidden;
+}
+
+svg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  display: block;
+  z-index: -1;
+}
+
+path {
+  stroke: #7d0d0d;
+  fill: none;
+}
+
+h1 {
+  font-size: 6vh;
+  color: #5c0a0a;
+  font-family: "Courier New", Courier, monospace;
+  pointer-events: none;
+}
+
+h1::before {
+  content: "ELASTIC";
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  font-size: 20rem;
+  color: #202020;
+  z-index: -99;
+}
+/*# sourceMappingURL=style.css.map */
